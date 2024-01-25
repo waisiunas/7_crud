@@ -74,8 +74,8 @@ $countries = $result->fetch_all(MYSQLI_ASSOC);
                                             <td><?php echo $country['currency'] ?></td>
                                             <td><?php echo $country['language'] ?></td>
                                             <td>
-                                                <a href="" class="btn btn-primary">Edit</a>
-                                                <a href="" class="btn btn-danger">Delete</a>
+                                                <a href="./edit-country.php?id=<?php echo $country['id'] ?>" class="btn btn-primary">Edit</a>
+                                                <a href="./delete-country.php?id=<?php echo $country['id'] ?>" class="btn btn-danger">Delete</a>
                                             </td>
                                         </tr>
                                     <?php
